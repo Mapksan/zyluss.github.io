@@ -70,6 +70,8 @@ nav
   padding:2.5%;
   width:30%;
   transition: all .3s cubic-bezier(.2,.3,0,1);
+  border:solid #043CDF 3px;
+  
 }
 
 .box:hover
