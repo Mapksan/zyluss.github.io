@@ -43,6 +43,7 @@ nav
   width:100%;
   height: auto;
   /*right: 0; unneccessary */
+  border:solid #043CDF 0.10%;
 }
 
 #navsocial {
@@ -70,7 +71,7 @@ nav
   padding:2.5%;
   width:30%;
   transition: all .3s cubic-bezier(.2,.3,0,1);
-  border:solid #043CDF 3px;
+  
   
 }
 
