@@ -16,7 +16,7 @@ a, #hover
   margin:10px;
   transition:.7s;
   margin-bottom:20px;
-  padding:2.5%;
+  padding:1.5%;
 }
 
 
@@ -44,11 +44,9 @@ nav
   width:100%;
   height: auto;
   /*right: 0; unneccessary */
-  border-top:solid #000 5px;
-}
-nav:hover{
   border-top:solid #ff9900 5px;
 }
+
 
 #navsocial {
   float: right;
