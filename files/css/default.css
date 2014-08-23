@@ -43,7 +43,7 @@ nav
   width:100%;
   height: auto;
   /*right: 0; unneccessary */
-  border-bottom:solid #043CDF 2px;
+  border-top:solid #000 5px;
 }
 
 #navsocial {
