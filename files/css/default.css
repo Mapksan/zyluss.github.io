@@ -16,12 +16,13 @@ a
   margin:10px;
   transition:.7s;
   margin-bottom:20px;
+  padding:2.5%;
 }
 
 
 a:hover
 {
-  opacity:0.25;
+  background-color:#ff9900;
 }
 
 img
@@ -44,6 +45,9 @@ nav
   height: auto;
   /*right: 0; unneccessary */
   border-top:solid #000 5px;
+}
+nav:hover{
+  border-top:solid #ff9900 5px;
 }
 
 #navsocial {
