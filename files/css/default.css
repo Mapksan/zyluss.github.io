@@ -9,7 +9,7 @@ body
 
 
 
-a
+a, #hover
 {
   color:white;
   text-decoration:none;
@@ -20,7 +20,7 @@ a
 }
 
 
-a:hover
+#hover:hover
 {
   background-color:#ff9900;
 }
