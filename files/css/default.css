@@ -9,13 +9,16 @@ body
 
 
 
-a, #hover
+a
 {
   color:white;
   text-decoration:none;
   margin:10px;
   transition:.7s;
   margin-bottom:20px;
+}
+#hover
+{
   padding:2.5%;
 }
 
