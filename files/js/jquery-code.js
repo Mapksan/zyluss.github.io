@@ -1,3 +1,3 @@
-$(document).ready(function(){
-    $(".current").animate({background-color:'gray'});
+$(document).unload(function(){
+    $("div").animate({background-color:'black'});
   });
