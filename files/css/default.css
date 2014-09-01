@@ -1,5 +1,4 @@
 /* Default Stylesheet */
-/* Order yer CSS chronologically nub :3 */
 body
 {
   font-family:'Roboto', sans-serif;
@@ -35,32 +34,27 @@ a
 
 img
 {
-  /*width:5%;*/
-  /*height:5%;*/
-  /*float:right;  ._______. */
+  
 }
 
 nav
 {
   background-color:#C0C0C0;
-  /*margin:0; unneccessary */
   padding:2.5%;
   position:fixed;
   top:0;
   left:0;
-  /*position:fixed; seriously? */
   width:100%;
   height: auto;
-  /*right: 0; unneccessary */
   border-top:solid #ff9900 5px;
 }
 
 
 #navsocial {
   float: right;
-  height: 40px; /* please dont use percent because its fucked up on larger screens */
+  height: 40px;
   display: inline-block;
-  margin-right: 5%; /* dunno why but it works */
+  margin-right: 5%;
 }
 #navsocial a {
   margin: 0;
@@ -73,7 +67,6 @@ nav
 .box
 {
   color:whitesmoke;
-  /*font-family:Roboto, sans-serif; this will be inherited from body {} */
   font-size:15px;
   height:10%;
   background-color:gray;
@@ -88,7 +81,6 @@ nav
 .box:hover
 {
   background-color:#c0c0c0;
-  /*transition:.7s; Seriously Zyluss? That's way too long. And it also looks awkward */
 }
 
 #box1
