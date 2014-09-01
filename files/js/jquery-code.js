@@ -3,6 +3,7 @@ $(document).unload(function(){
   });
 $(document).ready(function(){
   
+  
   $("#face").click(function(){
     document.write("you're dead to me.");
   });
