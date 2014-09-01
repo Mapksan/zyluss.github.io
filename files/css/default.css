@@ -18,18 +18,21 @@ a
   transition:.7s;
   margin-bottom:20px;
 }
-#hover
+nav a#hover
 {
   padding:2.5%;
 }
 
 
-#hover:hover
+nav a#hover:hover
 {
   background-color:#ff9900;
 }
-.current{
+nav a#hover.current {
   background-color:#ff9900;
+}
+nav a#hover.current:hover {
+  background-color: #ffb846;
 }
 
 img
