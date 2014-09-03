@@ -1,4 +1,13 @@
-
+$(document).ready(function(){
+  $("#footer").click(function(){
+    $("#footer").addClass("footer-expanded");
+  });
+});
+$(document).ready(function(){
+  $(".footer-expanded").click(function(){
+    $("#footer").removeClass("footer-expanded");
+  });
+});
   
   $("nav a#hover").click(function(e){
     e.preventDefault();
