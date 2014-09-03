@@ -1,12 +1,4 @@
-$(document).unload(function(){
-    $("div").animate({background:'black'});
-  });
-$(document).ready(function(){
-  
-  
-  $("#face").click(function(){
-    document.write("you're dead to me.");
-  });
+
   
   $("nav a#hover").click(function(e){
     e.preventDefault();
@@ -22,7 +14,7 @@ $(document).ready(function(){
       .css("height", $(obj).innerHeight())
       .css("z-index","1000000")
       .css("background", "#ff9900")
-      .css("transition","all 0.5s cubic-bezier(.2,.3,0,1)")
+      .css("transition","all 0.7s cubic-bezier(.2,.3,0,1)")
       .css("opacity","1");
     
       setTimeout(function(){
