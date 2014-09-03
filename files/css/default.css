@@ -54,7 +54,7 @@ nav a#hover:hover}
 {
   background-color:#ff9900;
 }
-nav a#hover.current
+nav a#hover.current{
   background-color:#ff9900;
 }
 nav a#hover.current:hover {
