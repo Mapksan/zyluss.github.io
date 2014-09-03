@@ -113,10 +113,15 @@ nav
   background-color:#c0c0c0;
 }
 
-#box1
-{
+#box1{
   top:25%;
   margin-left:8%;
+  width:80%;
+  margin-right:auto;
+  
+  
+
+
 }
 
 #box2
@@ -155,4 +160,4 @@ nav
   letter-spacing:.4px;
   word-spacing:2px;
   text-align:center;
-}
+}]
