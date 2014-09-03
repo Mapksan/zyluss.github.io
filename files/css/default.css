@@ -49,15 +49,12 @@ a
 
 nav a#hover
 {
-  padding:2.5%;
-}
-
-
+  padding:2
 nav a#hover:hover
 {
   background-color:#ff9900;
 }
-nav a#hover.current {
+nav a#hover.current
   background-color:#ff9900;
 }
 nav a#hover.current:hover {
@@ -78,7 +75,7 @@ nav
   left:0;
   width:100%;
   height: auto;
-  border-top:solid #ff9900 5px;
+  border-top:solid #ff9900 7px;
 }
 
 
