@@ -102,7 +102,7 @@ nav
   background-color:gray;
   position:absolute;
   padding:2.5%;
-  width:30%;
+  min-width:30%;
   transition: all .3s cubic-bezier(.2,.3,0,1);
   
   
