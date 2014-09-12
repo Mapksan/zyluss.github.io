@@ -48,9 +48,9 @@ $(document).ready(function(){
   
 });
 $(document).ready(function () {
-  if ( $( "nav" ).is( ":hidden" ) ) {
-    $( "nav" ).slideDown( "slow" );
+  if ( $( ".img" ).is( ":hidden" ) ) {
+    $( ".img" ).slideDown( "slow" );
   } else {
-    $( "nav" ).hide();
+    $( ".img" ).hide();
   }
 });
