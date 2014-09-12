@@ -10,17 +10,18 @@
 <script>
 	(function creeps(){
 	confirm('Are you ready to play?');
+	var age = 0;
 	(function agep(){
-	var age = prompt('How old are you?');
+	age = prompt('How old are you?');
 	if ( !age.match("\\d+") ) {
 		alert("please enter a number");
 		agep();
 	}
+	})();
 	if (age < 13) { 
 		document.write('You have to be 13 to play the game');
 		return;
 	}
-	})();
 	alert('You are going to america but you find justin beiber being butt raped in prison, you decide to help him');
 	var help = prompt('Are you going to help justin beiber?');
 
