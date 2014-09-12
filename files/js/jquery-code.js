@@ -1,14 +1,14 @@
 
 $(document).ready(function(){
   $("#footer").click(function(){
-    $("#footer").addClass("footer-expanded");
+    $("#footer").css
+     ("padding-top":"5%",
+     "padding-bottom":"5%"
+    
+     );
   });
 });
-$(document).ready(function(){
-  
-  $(".footer-expanded").click(function(){
-    $("#footer").removeClass("footer-expanded");
-  });
+
   
   $("nav a#hover").click(function(e){
     e.preventDefault();
@@ -47,7 +47,4 @@ $(document).ready(function(){
   });
   
 });
-$(document).ready(function () {
-  if ( $( ".img" ).is( ".img" ) ) {
-    $( ".img" ).slideDown( "slow" );
-});
+
