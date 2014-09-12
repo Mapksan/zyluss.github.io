@@ -48,9 +48,6 @@ $(document).ready(function(){
   
 });
 $(document).ready(function () {
-  if ( $( ".img" ).is( ":hidden" ) ) {
+  if ( $( ".img" ).is( ".img" ) ) {
     $( ".img" ).slideDown( "slow" );
-  } else {
-    $( ".img" ).hide();
-  }
 });
