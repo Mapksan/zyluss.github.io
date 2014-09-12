@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
   $("#footer").click(function(){
     $("#footer").addClass("footer-expanded");
@@ -45,4 +46,11 @@ $(document).ready(function(){
   
   });
   
+});
+$(document).ready(function () {
+  if ( $( "div:first" ).is( ":hidden" ) ) {
+    $( "div" ).slideDown( "slow" );
+  } else {
+    $( "div" ).hide();
+  }
 });
