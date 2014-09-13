@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
   $("#footer").click(function(){
-    $("#footer").css("paddingTop":"5%","paddingBottom":"5%")
+    $("#footer").css("paddingTop":"5%","paddingBottom":"5%");
     });
   });
 
