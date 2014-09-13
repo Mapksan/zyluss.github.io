@@ -1,13 +1,9 @@
 
 $(document).ready(function(){
   $("#footer").click(function(){
-    $("#footer").css(
-    {
-      "padding-top":"5%",
-      "padding-bottom":"5%"
+    $("#footer").css("paddingTop":"5%","paddingBottom":"5%")
     });
   });
-});
 
   
   $("nav a#hover").click(function(e){
