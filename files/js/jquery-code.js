@@ -1,4 +1,4 @@
-$("#legal").hide();
+$("#legal").css({"opacity":"0"});
 
 $(document).ready(function(){
   $("#footer").click(function(){
