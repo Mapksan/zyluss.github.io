@@ -1,9 +1,9 @@
-$("#legal").css({"opacity":"0"});
+
 
 $(document).ready(function(){
   $("#footer").click(function(){
     $("#footer").css({"padding-bottom":"7%"});
-    $("#legal").show();
+    $("#legal").css({"opacity":"1"});
   });
 
   
