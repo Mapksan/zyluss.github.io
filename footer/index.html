@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <head>
 	<title> Footer Example </title>
 		<script type="text/javascript" src="/files/js/jquery.js"> </script> 
@@ -10,14 +10,25 @@ Footer example
 
 <style>
 #footer{
- background-color:grey;
-opacity:0.4;
-border-top: solid black 2px;
-color:black;
-font-family:Helvetica;
+	margin:0px; 
+	background-color:grey;
+	opacity:0.4;
+	border-top: solid black 2px;
+	color:black;
+	font-family:Helvetica;
 }
+#footer-text{
+	
+}
+
+
 </style>
 <script>
-	$("#footer"a).click(function() { 
-	//Do something apparentky	
-});
+	$("#footer").click(function() {
+		$("#footer").animate({"padding-top":"15%"});
+                $("#footer-text").css({"text-size":"1px","opacity":"1"});
+		
+		
+				
+
+      	});
