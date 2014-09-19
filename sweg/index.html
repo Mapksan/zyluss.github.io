@@ -12,7 +12,7 @@ text-align:center;
 padding:2.5%;
 background-color:black;
 }
-#button{
+#button,#nathan{
 background-color:;
 color:yellow;
 }
@@ -21,7 +21,7 @@ color:yellow;
 
 <p>How many swegs do you have?</p>
 
-<button onclick="myFunction()">Try it</button>
+<button id="button" onclick="myFunction()">How many swegs do you have?</button>
 
 <p id="button"></p>
 <p id="nathan"></p>
@@ -31,10 +31,10 @@ function myFunction() {
     document.getElementById("button").innerHTML = Math.random(10);
 }
 function Nathan() {
-document.getElementById("nathan").innerHTML = document.write("Badum tss....");
+document.getElementById("nathan").innerHTML = document.write("<body><p>Badum tss....</p></body>");
 }
 </script>
-<button onclick="Nathan()"id="button">
+<button onclick="Nathan()"id="nathan">
 Nathan Tells a joke..
 </button
 </body>
