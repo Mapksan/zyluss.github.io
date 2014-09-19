@@ -13,7 +13,7 @@ padding:2.5%;
 background-color:black;
 }
 #button{
-background-color:Fuschia;
+background-color:;
 color:yellow;
 }
 </style>
@@ -24,12 +24,18 @@ color:yellow;
 <button onclick="myFunction()">Try it</button>
 
 <p id="button"></p>
+<p id="nathan"></p>
 
 <script>
 function myFunction() {
-    document.getElementById("demo").innerHTML = Math.random(10);
+    document.getElementById("button").innerHTML = Math.random(10);
+}
+function Nathan() {
+document.getElementById("nathan").innerHTML = document.write("Badum tss....");
 }
 </script>
-
+<button onclick="Nathan()"id="button">
+Nathan Tells a joke..
+</button
 </body>
 </html>
