@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
+body{
+  background-color:#222;
+  font-family:Roboto;
+  margin:0px; 
+  font-weight:400;
+  
+}
+*{
+  transition:0.269s;
+}
+.nav{
+  text-align:right;
+  color:whitesmoke;
+  text-decoration:none;
+  font-weight:400;
+  margin-right:25px;
+  width:700px;
+}
+#face{
+  float:left;
+  margin-left:0.5cm;
+  width:0.9cm;
+  height:0.9cm;
+}
+#nav{
+  border-top:solid #ff9900 2px;
+  padding-top:0.5cm;
+  padding-bottom:0.5cm;
+  width:100%;
+  background-color:#222;
+  top:0;
+  right:0;
+  position:fixed;
+  text-align:right;
+}
+.nav:hover{
+  color:grey;
+}
+#canvas{
+  margin-top:3cm;
+  color:white;
+  margin-right:1cm;
+  margin-left:1cm;
+  background-color:grey;
+  padding:2.5%;
+  box-shadow: 0.1cm 0.1cm 0.1cm #7f7272;
+}
+progress{
+  color:black;
+  background-color:blue;
+  border:solid black 2px;
+}
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+
+}
+#languages{
+  font-family:Source code pro;
+}
+b{
+  border-top:solid 1px black;
+  margin-left:0.5cm;
+}
