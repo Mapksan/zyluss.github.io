@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
 body{
-  background-color:#222;
+  background-color:grey;
   font-family:Roboto;
   margin:0px; 
   font-weight:400;
@@ -40,10 +40,10 @@ body{
 }
 #canvas{
   margin-top:3cm;
-  color:white;
+  color:black;
   margin-right:1cm;
   margin-left:1cm;
-  background-color:grey;
+  background-color:white;
   padding:2.5%;
   box-shadow: 0.1cm 0.1cm 0.1cm #7f7272;
 }
@@ -60,6 +60,7 @@ progress[value] {
 }
 #languages{
   font-family:Source code pro;
+  color:black;
 }
 b{
   border-top:solid 1px black;
