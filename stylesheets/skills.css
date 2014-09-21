@@ -48,15 +48,9 @@ body{
   box-shadow: 0.1cm 0.1cm 0.1cm #7f7272;
 }
 progress{
-  color:black;
-  background-color:blue;
-  border:solid black 2px;
-}
-progress[value] {
-  /* Reset the default appearance */
-  -webkit-appearance: none;
-   appearance: none;
-
+  background-color:black;
+  border-radius:100mm 150mm;
+  border:solid grey 5px;
 }
 #languages{
   font-family:Source code pro;
