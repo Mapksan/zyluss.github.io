@@ -37,16 +37,17 @@ $.ajax({
 }).done(function (data) {
 	var output = "";
 	for ( var i in data ) {
-		output += "	
-		<div class="project">
-			<a href="+ /data[i].language/ + data[i].link">+ data[i].name</a><br>\
-
+		output += "\
+		<div class='project'>\
+			<a href='"+ /data[i].language/ + data[i].link + "'>"+ data[i].name + "</a><br>\
+    \
 		</div>\
 		";
-	}
-	if ( output == "" ) {
-		output = "Error whilst loading JSON";
-	}
+     //output is a local variable! you cannot use it outside this function
+      $("#katz"). append(output);
+	}).fail(function(){
+   //stuff
+});
 </script>
 </div>
     
