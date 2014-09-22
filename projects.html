@@ -12,7 +12,8 @@
 <link rel="icon" type="image/png" href="http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16">
 <!--[if IE]><link rel="shortcut icon" href="http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16/><![endif]-->
 <!--Stylesheets-->
-<link rel="text/css" type="stylesheet" href="stylesheets/projects.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/scrollbar.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/projects.css">
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     
@@ -38,7 +39,7 @@ $.ajax({
 	for ( var i in data ) {
 		output += "	
 		<div class="project">
-			<a href="/data[i].language/data[i].link">data[i].name</a>\
+			<a href="+ /data[i].language/ + data[i].link">+ data[i].name</a><br>\
 
 		</div>\
 		";
