@@ -1,3 +1,52 @@
-<title>Under construction</title>
-    <red>u hv ben spooked</red>
-      <script>location.href = "http://zyluss.github.io/c"; </script>
+
+  <meta charset="UTF8">
+  <head>
+    <title> Zyluss's Website || Projects </title>
+    <!--Favicons link: minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16-->
+<link rel="icon" type="image/png" href="Http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16">
+<link rel="icon" type="image/gif" href="Http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16">
+<link rel="icon" type="image/jpeg" href="Http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16">
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16">
+<link rel="shortcut icon" href="http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16" />
+<link rel="address bar icon" href="http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16">
+<link rel="icon" type="image/png" href="http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16">
+<!--[if IE]><link rel="shortcut icon" href="http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=16/><![endif]-->
+<!--Stylesheets-->
+<link rel="text/css" type="stylesheet" href="stylesheets/projects.css">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+  <body>
+
+    <div id="nav">
+      <a href="#nav"><img id="face" src="http://minecraft-skin-viewer.com/face.php?u=Zyluss_&s=1080"></a>
+      <a class="nav" href="http://zyluss.github.io">Home</a>
+      <a class="nav" href="/projects">Projects</a>
+      <a class="nav" href="/social">Social</a>
+      <a class="nav" href="/skills">Skills</a>
+      <a class="nav" href="/contact">Contact</a>
+</div>
+  <div id="canvas">
+    <div class="list">
+<script>
+$.ajax({
+	dataType: "json",
+	url: "projects.json"
+}).done(function (data) {
+	var output = "";
+	for ( var i in data ) {
+		output += "	
+		<div class="project">
+			<a href="/data[i].language/data[i].link">data[i].name</a>\
+
+		</div>\
+		";
+	}
+	if ( output == "" ) {
+		output = "Error whilst loading JSON";
+	}
+</script>
+</div>
+    
+</body>
