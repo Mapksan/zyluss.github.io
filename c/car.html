@@ -1,7 +1,16 @@
 <pre>
+<span style="color: #7E7E7E;">//Forward&nbsp;Define</span>
 <span style="color: #CC6600;">const</span> <span style="color: #CC6600;">int</span> f_input = 4;     
 <span style="color: #CC6600;">int</span> f_output =  13;      
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color: #7E7E7E;">//Backward&nbsp;Define</span>
+<span style="color: #CC6600;">const</span> <span style="color: #CC6600;">int</span> b_input = 3;
+<span style="color: #CC6600;">int</span> b_output = 12;
+<span style="color: #7E7E7E;">//Left&nbsp;Define</span>
+<span style="color: #CC6600;">const</span> <span style="color: #CC6600;">int</span> l_input = 2;
+<span style="color: #CC6600;">int</span> l_output = 11;
+<span style="color: #7E7E7E;">//Right&nbsp;define</span>
+<span style="color: #CC6600;">const</span> <span style="color: #CC6600;">int</span> r_input = 1;
+<span style="color: #CC6600;">int</span> r_output = 10;
 
 <span style="color: #CC6600;">void</span> <span style="color: #CC6600;"><b>setup</b></span>() {
 
@@ -13,9 +22,6 @@
 <span style="color: #CC6600;">void</span> <span style="color: #CC6600;"><b>loop</b></span>() <span style="color: #7E7E7E;">//Start loop</span>
 &nbsp;&nbsp;{
 
-&nbsp;&nbsp;&nbsp;&nbsp;f_input&nbsp;=&nbsp;<span style="color: #CC6600;">digitalRead</span>();
-
-
 
 &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6600;">if</span> (f_input == <span style="color: #006699;">HIGH</span>) {
 
@@ -23,7 +29,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6600;">else</span> {
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #7E7E7E;">//idc</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;}
 &nbsp;&nbsp;
 &nbsp;&nbsp;
