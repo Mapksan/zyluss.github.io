@@ -1,0 +1,33 @@
+<pre>
+<span style="color: #CC6600;">const</span> <span style="color: #CC6600;">int</span> f_input = 4;     
+<span style="color: #CC6600;">int</span> f_output =  13;      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<span style="color: #CC6600;">void</span> <span style="color: #CC6600;"><b>setup</b></span>() {
+
+&nbsp;&nbsp;<span style="color: #CC6600;">pinMode</span>(f_output, <span style="color: #006699;">OUTPUT</span>);
+
+&nbsp;&nbsp;<span style="color: #CC6600;">pinMode</span>(f_input, <span style="color: #006699;">INPUT</span>);
+}
+
+<span style="color: #CC6600;">void</span> <span style="color: #CC6600;"><b>loop</b></span>() <span style="color: #7E7E7E;">//Start loop</span>
+&nbsp;&nbsp;{
+
+&nbsp;&nbsp;&nbsp;&nbsp;f_input&nbsp;=&nbsp;<span style="color: #CC6600;">digitalRead</span>();
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6600;">if</span> (f_input == <span style="color: #006699;">HIGH</span>) {
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6600;">digitalWrite</span>(f_output, <span style="color: #006699;">HIGH</span>);
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6600;">else</span> {
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #7E7E7E;">//idc</span>
+&nbsp;&nbsp;}
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+}<span style="color: #7E7E7E;">//End Loop</span>
+
+</pre>
