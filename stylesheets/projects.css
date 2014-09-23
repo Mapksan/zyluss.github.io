@@ -75,3 +75,8 @@ body{
 .project .viewframe.open {
   height: 600px;
 }
+progress{
+  background-color:black;
+  border-radius:15px 10px;
+  appearance:none;
+}
