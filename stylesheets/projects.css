@@ -3,7 +3,7 @@
 body{
   background-color:grey;
   font-family:Roboto;
-  margin:0px; 
+  margin:0;
   font-weight:400;
   
 }
@@ -46,16 +46,20 @@ body{
   background-color:white;
   padding:2.5%;
   box-shadow: 0.1cm 0.1cm 0.1cm #7f7272;
-  font-family:Source code pro;
+  font-family: 'Source Code Pro';
 }
-.list{
-  border-right:solid green 2px;
+#list{
+  border-right: 2px solid #1fc439;
 }
-.projects{
-  color:black;
+.project {
   padding:0.2cm;
   text-decoration:none;
 }
-.projects:hover{
-  color:green;
+
+.project a {
+  color: #000;
+  text-decoration: none;
+}
+.project a:hover {
+  color: #1fc439;
 }
