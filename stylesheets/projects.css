@@ -62,6 +62,7 @@ body{
 }
 .project a:hover {
   color: #1fc439;
+  border-right: 15px solid black;
 }
 
 .project .viewframe {
