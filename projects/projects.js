@@ -2,6 +2,9 @@
 function projectEventHandlers() { //will be called somewhere in the HTML file
 
   $(".project a").click(function(e){ //click handler for links in the projects list
+    if( e.which == 2 ) { //don't do anything when MOUSE3 (mouse wheel button) was clicked
+      return;
+    }
     e.preventDefault(); //prevent default action, which is opening a new window
     
     if( !$(this).parent().find(".viewframe").length ) { //check if view frame exists
