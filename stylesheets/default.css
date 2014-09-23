@@ -4,7 +4,7 @@ body{
   font-family:Roboto;
   margin:0px; 
   font-weight:400;
-  
+  overflow-x: hidden;
 }
 *{
   transition:0.269s;
@@ -47,7 +47,7 @@ body{
   background-color:#DDDBDB;
 }
 #canvas{
-  width:100%;
+/*  width:100%;*/
   background-color:grey;
 }
 #info{
@@ -60,4 +60,16 @@ body{
   right:0;
   width:100%;
   text-align:center;
+}
+#canvas{
+  position: absolute;
+  top: 3cm;
+  color: whitesmoke;
+  max-width: 100%;
+  left:1cm;
+  right:1cm;
+/*  background-color: white;*/
+  padding: .6cm;
+  box-shadow: 0.1cm 0.1cm 0.4cm rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
