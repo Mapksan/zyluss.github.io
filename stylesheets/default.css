@@ -46,10 +46,6 @@ body{
   border-bottom:solid 10px #222;
   background-color:#DDDBDB;
 }
-#canvas{
-/*  width:100%;*/
-  background-color:grey;
-}
 #info{
 /*  position: absolute;*/
   background-color:#222;
