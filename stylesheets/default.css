@@ -51,23 +51,23 @@ body{
   background-color:grey;
 }
 #info{
+/*  position: absolute;*/
   background-color:#222;
   padding-top:0.5cm;
   padding-bottom:0.5cm;
   margin-top:-0.36cm;
   color:whitesmoke;
-  top:0;
-  right:0;
+  left: 0;
   width:100%;
   text-align:center;
 }
 #canvas{
-  position: absolute;
-  top: 3cm;
+/*  position: absolute;*/
+  margin-top: 3cm;
   color: whitesmoke;
   max-width: 100%;
-  left:1cm;
-  right:1cm;
+  margin-left:1cm;
+  margin-right:1cm;
 /*  background-color: white;*/
   padding: .6cm;
   box-shadow: 0.1cm 0.1cm 0.4cm rgba(0, 0, 0, 0.25);
