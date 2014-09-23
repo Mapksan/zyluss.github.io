@@ -51,6 +51,9 @@ body{
 #list{
   border-right: 2px solid #1fc439;
 }
+#list{
+  border-right: 12px solid black;
+}
 .project {
   padding:0.2cm;
   text-decoration:none;
@@ -62,7 +65,6 @@ body{
 }
 .project a:hover {
   color: #1fc439;
-  border-right: 15px solid black;
 }
 
 .project .viewframe {
