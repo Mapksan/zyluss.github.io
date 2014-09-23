@@ -1,12 +1,7 @@
 {
-  "test": {
+  "C_Car": {
     "language": "c",
     "link": "car.html",
-    "name": "eggs"
-  },
-  "test2": {
-    "language": "c",
-    "link": "car.html",
-    "name": "moar eggs"
+    "name": "Robot Car Project Coded in C"
   }
 }
