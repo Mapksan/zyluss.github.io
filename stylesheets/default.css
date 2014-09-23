@@ -60,7 +60,8 @@ body{
 #canvas{
 /*  position: absolute;*/
   margin-top: 3cm;
-  color: whitesmoke;
+  color: black;
+  background: white;
   max-width: 100%;
   margin-left:1cm;
   margin-right:1cm;
