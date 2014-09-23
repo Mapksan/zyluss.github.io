@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/projects.css">
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="projects.js"></script>
     
   </head>
   <body>
@@ -44,6 +45,7 @@
                   </div>";
               }
               $("#list").append(output);
+              projectEventHandlers();
             }).fail(function(){
               $("#list").append("Error loading JSON");
             });
