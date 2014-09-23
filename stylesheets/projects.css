@@ -60,9 +60,11 @@ body{
   color: #000;
   text-decoration: none;
 }
-.project a:hover {
-  color: #1fc439;
+#list:hover{
   border-right: 15px solid black;
+}
+.project:hover {
+  color: #1fc439;
 }
 
 .project .viewframe {
