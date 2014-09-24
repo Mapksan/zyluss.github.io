@@ -47,11 +47,6 @@ body{
   padding:2.5%;
   box-shadow: 0.1cm 0.1cm 0.1cm #7f7272;
 }
-progress{
-  background-color:black;
-  border-radius:10px 10px;
-  border:solid grey 5px;
-}
 #languages{
   font-family:Source code pro;
   color:black;
