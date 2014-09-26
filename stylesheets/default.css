@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
 body{
-  background-color:#222;
+  background-color:grey;
   font-family:Roboto;
   margin:0px; 
   font-weight:400;
@@ -43,7 +43,6 @@ body{
   height:auto;
   margin-left:10%;
   margin-right:auto;
-  border-bottom:solid 10px #222;
   background-color:#DDDBDB;
 }
 #info{
@@ -51,22 +50,18 @@ body{
   background-color:#222;
   padding-top:0.5cm;
   padding-bottom:0.5cm;
-  margin-top:-0.36cm;
   color:whitesmoke;
   left: 0;
   width:100%;
   text-align:center;
 }
 #canvas{
-/*  position: absolute;*/
-  margin-top: 3cm;
+/*  position: absolute http://edublog.amdsb.ca/swbv/files/2014/04/In-Space-1k7uok8.jpgute;*/
   color: black;
-  background: white;
+  background: grey;
   max-width: 100%;
   margin-left:1cm;
   margin-right:1cm;
 /*  background-color: white;*/
-  padding: .6cm;
-  box-shadow: 0.1cm 0.1cm 0.4cm rgba(0, 0, 0, 0.25);
-  overflow: hidden;
+  overflow-x:hidden;
 }
