@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
-    
+  
+  //$("head").append("<script src='/scripts/interpolater.js'>");
+  
   var _int = setInterval(function(){},10000000); //dummy
   
   function newInterval() { //used for resetting the setInterval timer to 5000
@@ -25,21 +27,21 @@ jQuery(document).ready(function ($) {
   $('#slider ul li:last-child').prependTo('#slider ul');
 
   function moveLeft() {
-    $('#slider ul').animate({
+    $('#slider ul').animateInterpolated({
         left: + slideWidth
     }, 200, function () {
         $('#slider ul li:last-child').prependTo('#slider ul');
         $('#slider ul').css('left', '');
-    });
+    }, .2, .3, 0, 1);
   };
 
   function moveRight() {
-    $('#slider ul').animate({
+    $('#slider ul').animateInterpolated({
         left: - slideWidth
     }, 200, function () {
         $('#slider ul li:first-child').appendTo('#slider ul');
         $('#slider ul').css('left', '');
-    });
+    }, .2, .3, 0, 1);
   };
 
   $('a.control_prev').click(function () {
