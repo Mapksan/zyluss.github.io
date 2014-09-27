@@ -78,6 +78,7 @@ body{
   padding: 0;
   height: 200cm;
   list-style: none;
+  width: 100%;
   transition: all 0s;
 }
 
@@ -87,7 +88,7 @@ body{
   float: left;
   margin: 0;
   padding: 0;
-  width: 650px;
+  width: 0;/* will be set in the javascript */
   height: 11cm;
   background: #ccc;
   text-align: center;
@@ -99,7 +100,7 @@ a.control_prev, a.control_next {
   top: 40%;
   z-index: 999;
   display: block;
-  padding: 4% 3%;
+  padding: 1cm .5cm;
   width: auto;
   height: auto;
   background: #2a2a2a;

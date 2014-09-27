@@ -16,13 +16,21 @@ jQuery(document).ready(function ($) {
   });
 
   var slideCount = $('#slider ul li').length;
-  var slideWidth = $('#slider ul li').width();
+//  var slideWidth = $('#slider ul li').width();
+  var slideWidth = $("#slider").width();
   var slideHeight = $('#slider ul li').height();
   var sliderUlWidth = slideCount * slideWidth;
 
-  $('#slider').css({ width: slideWidth, height: slideHeight });
 
-  $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  
+  $(window).resize(function(){
+    slideWidth = $("#slider").width();
+    sliderUlWidth = slideCount * slideWidth;
+    $('#slider').css({ width: slideWidth, height: slideHeight });
+    $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+    $("#slider ul li").css("width", slideWidth );
+  });
+  $(window).resize();
 
   $('#slider ul li:last-child').prependTo('#slider ul');
 
