@@ -78,6 +78,7 @@ body{
   padding: 0;
   height: 200cm;
   list-style: none;
+  transition: all 0s;
 }
 
 #slider ul li {
