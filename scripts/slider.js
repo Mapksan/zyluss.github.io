@@ -29,19 +29,19 @@ jQuery(document).ready(function ($) {
   function moveLeft() {
     $('#slider ul').animateInterpolated({
         left: + slideWidth
-    }, 200, function () {
+    }, 500, function () {
         $('#slider ul li:last-child').prependTo('#slider ul');
         $('#slider ul').css('left', '');
-    }, .2, .3, 0, 1);
+    }, 0, 1, 0, 1);
   };
 
   function moveRight() {
     $('#slider ul').animateInterpolated({
         left: - slideWidth
-    }, 200, function () {
+    }, 500, function () {
         $('#slider ul li:first-child').appendTo('#slider ul');
         $('#slider ul').css('left', '');
-    }, .2, .3, 0, 1);
+    }, 0, 1, 0, 1);
   };
 
   $('a.control_prev').click(function () {
