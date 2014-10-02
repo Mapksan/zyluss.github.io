@@ -46,5 +46,24 @@ $(document).ready(function(){
 		}
 
 	});
+	
+	$(document).keydown(function(e){
+		
+		if( !$("#nav").hasClass("exp") ) {
+			if( e.which == 38 ) {
+				e.preventDefault();
+				$("html, body").animate({
+					scrollTop: $(window).scrollTop() - 100
+				},100);
+			} else if( e.which == 40 ) {
+				e.preventDefault();
+				$("html, body").animate({
+					scrollTop: $(window).scrollTop() + 100
+				},100);
+			}
+			
+		}
+		
+	});
 
 })

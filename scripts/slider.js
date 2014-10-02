@@ -61,5 +61,23 @@ jQuery(document).ready(function ($) {
     moveRight();
     newInterval(); //make sure it waits 5 seconds before continuing
   });
+	
+	$(document).keydown(function(e) {
+		
+		if( !$("#nav").hasClass("exp") ) {
+			
+			if( e.which == 37 ) {
+				e.preventDefault();
+				moveLeft();
+				newInterval();
+			} else if( e.which == 39 ) {
+				e.preventDefault();
+				moveRight();
+				newInterval();
+			}
+			
+		}
+		
+	});
 
 });    
