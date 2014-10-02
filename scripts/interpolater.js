@@ -64,7 +64,12 @@ $.fn.animateInterpolated = function(attrs, speed, callback, x1, y1, x2, y2, attr
 					continue;
 				}
 			//}
-			if( attrmode ) {
+			
+			if( k == "scrollTop" ) {
+				_xnf.scrollTop( function(i, old) {
+					return parseInt(start[k]) + pst;
+				});
+			} else if( attrmode ) {
 				_xnf.attr(k, function(i, old) {
 					return parseInt(start[k]) + pst;
 				});
