@@ -113,6 +113,30 @@ $(document).ready(function(){
 				
 				$(".nav:focus").next(".nav").focus();
 					
+			} else if( e.which == 13 ) {
+				
+				if( !$(".nav:focus").length ) {
+					return;
+				}
+				
+				var href = $(".nav:focus").attr("href");
+				
+				if( !href ) {
+					return;
+				}
+				e.preventDefault();
+				
+				$("#nav").removeClass("exp");
+				menu.reset();
+				$("*").css("pointer-events","none");
+				setTimeout(function(){
+					var addSlash = "";
+					if( href.substr( href.length - 1, href.length ) != "/" ) {
+						addSlash = "/";
+					}
+					document.location = href + addSlash + "?h=" + $("#canvas").height();
+					$("*").css("pointer-events","");
+				},500);
 			}
 		}
 		
