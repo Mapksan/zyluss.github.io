@@ -51,14 +51,19 @@ $.fn.animateInterpolated = function(attrs, speed, callback, x1, y1, x2, y2, attr
 		}
 	}
 	
+	var check = 0;
 	(function loop() {
 		for( var x in attrs ) {
 			var k = x;
 			var v = attrs[x];
 			var pst = (v - start[k]) * ( ( Bezier.cubicBezier(.2,.3,0,1, 1 / steps * (steps - cycles), speed) ) );
-			if( parseInt(_xnf.attr("data-interpolater-" + k)) != ts ) {
-				continue;
-			}
+			check++;
+			//if( check == 10 ) {
+				check = 0;
+				if( parseInt(_xnf.attr("data-interpolater-" + k)) != ts ) {
+					continue;
+				}
+			//}
 			if( attrmode ) {
 				_xnf.attr(k, function(i, old) {
 					return parseInt(start[k]) + pst;

@@ -69,4 +69,22 @@ $(document).ready(function(){
 		}
 	});
 	
+	$("#menuview .nav").click(function(e){
+		
+		if( e.which == 2 ) {
+			return;
+		}
+		e.preventDefault();
+		$("#nav").removeClass("exp");
+		menu.reset();
+		if( !$(this).attr("href") ) {
+			return;
+		}
+		var href = $(this).attr("href");
+		setTimeout(function(){
+			document.location = href;
+		},500);
+		
+	});
+	
 });
