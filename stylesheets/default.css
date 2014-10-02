@@ -10,12 +10,14 @@ body{
   transition:0.269s;
 }
 .nav{
-  text-align:right;
+  text-align:center;
   color:whitesmoke;
   text-decoration:none;
   font-weight:400;
-  margin-right:25px;
-  width:700px;
+/*  margin-right:25px;*/
+/*  width:700px;*/
+  display: list-item;
+  list-style-type: none;
 }
 #face{
   float:left;
@@ -23,16 +25,49 @@ body{
   width:0.9cm;
   height:0.9cm;
 }
+
+#menu {
+	height: .9cm;
+	width: .9cm;
+	float: left;
+	margin-left: .5cm;
+	cursor: pointer;
+}
+
+#menuview {
+  position: fixed;
+  top: 1.5cm;
+  left: 0;
+  background: #333;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+}
+#nav.exp #menuview {
+  top: 1.9cm;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#menuview .nav {
+  padding: 10px 30px;;
+}
+
 #nav{
   border-top:solid #ff9900 2px;
   padding-top:0.5cm;
-  padding-bottom:0.5cm;
+  height: 1.4cm;
   width:100%;
   background-color:#222;
   top:0;
   right:0;
   position:fixed;
   text-align:right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  z-index: 1000;
 }
 .nav:hover{
   color:grey;

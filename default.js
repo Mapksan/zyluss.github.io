@@ -1,6 +1,10 @@
 
-$(document).ready(function(){
+$("head").append("\
+<script src='/scripts/interpolater.js'></script>\
+<script src='/scripts/menu.js'></script>");
 
+$(document).ready(function(){
+	
 	//URL query
 	var uq = window.location.search.slice(1); //get the string after ?
 	var uqt = uq.split("&"); //split it into the sections

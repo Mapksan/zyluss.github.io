@@ -15,6 +15,8 @@ $.fn.animateInterpolated = function(attrs, speed, callback, x1, y1, x2, y2, attr
 	if( $("head").find("#animateInterpolatedWKB").length < 1 ) {
 		$("head").append("<script src='/scripts/webkit-bezier.js' id='animateInterpolatedWKB'>");
 	}
+	
+	var ts = Date.now();
 
 	if( !attrs ) {
 		throw "No attributes defined";
@@ -35,6 +37,7 @@ $.fn.animateInterpolated = function(attrs, speed, callback, x1, y1, x2, y2, attr
 
 	// populate the object with the initial state
 	$.each(attrs, function(k,v) {
+		_xnf.attr("data-interpolater-" + k, ts);
 		if( attrmode ) {
 			start[k] = _xnf.attr(k);
 		} else {
@@ -53,6 +56,9 @@ $.fn.animateInterpolated = function(attrs, speed, callback, x1, y1, x2, y2, attr
 			var k = x;
 			var v = attrs[x];
 			var pst = (v - start[k]) * ( ( Bezier.cubicBezier(.2,.3,0,1, 1 / steps * (steps - cycles), speed) ) );
+			if( parseInt(_xnf.attr("data-interpolater-" + k)) != ts ) {
+				continue;
+			}
 			if( attrmode ) {
 				_xnf.attr(k, function(i, old) {
 					return parseInt(start[k]) + pst;
@@ -62,48 +68,34 @@ $.fn.animateInterpolated = function(attrs, speed, callback, x1, y1, x2, y2, attr
 					return parseInt(start[k]) + pst;
 				});
 			}
-		}/*
-	  $.each(attrs, function(k,v) {  // cycle each attribute
-		  /* ORIGINAL CODE
-		  var pst = (v - start[k])/steps;  // how much to add at each step
-		  * /
+		}
 
-		  //get interpolated value
-		  var pst = (v - start[k]) * ( ( Bezier.cubicBezier(.2,.3,0,1, 1 / steps * (steps - cycles), speed) ) );
-		  /* ORIGINAL CODE
-		  this.attr(k, function(i, old) {
-			  return +old + pst;  // add value to the old one
-			  return +old + pst;
-		  });
-		  * /
-
-		  if( attrmode ) {
-			  _xnf.attr(k, function(i, old) {
-				  return parseInt(start[k]) + pst;
-			  });
-		  } else {
-			  _xnf.css(k, function(i, old) {
-				  return parseInt(start[k]) + pst; 
-			  });
-		  }
-	  });*/
-
-	  if (--cycles) // call the loop if counter is not exhausted
-		  setTimeout(loop, timeout);
-	  else {// otherwise set final state to avoid floating point values
-		  if( attrmode ) {
-			  _xnf.attr(attrs);
-		  } else {
-			  _xnf.css(attrs);
-		  }
-		  if( callback ) {
+	if (--cycles) // call the loop if counter is not exhausted
+		setTimeout(loop, timeout);
+	else {// otherwise set final state to avoid floating point values
+		if( attrmode ) {
+			//_xnf.attr(attrs);
+			$.each(attrs,function(k,v){
+				if( parseInt("data-interpolater-" + k) == ts ) {
+					$(_xnf).attr(k,v);
+				}
+			});
+		} else {
+			//_xnf.css(attrs);
+			$.each(attrs,function(k,v){
+				if( parseInt("data-interpolater-" + k) == ts ) {
+					$(_xnf).css(k,v);
+				}
+			});
+		}
+		if( callback ) {
 			try {
-			  callback();
+				callback();
 			} catch(err) {
-			  throw err;
+				throw err;
 			}
-		  }
-	  }
+		}
+	}
 
 	})(); // start the loop
 	return this;
