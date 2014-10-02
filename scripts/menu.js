@@ -62,9 +62,11 @@ $(document).ready(function(){
 	$(m).click(function(){
 		if( $("#nav").hasClass("exp") ) {
 			$("#nav").removeClass("exp");
+			$("#menuview .nav").attr("tabindex","-1");
 			menu.reset();
 		} else {
 			$("#nav").addClass("exp");
+			$("#menuview .nav").attr("tabindex","0");
 			menu.arrow.up();
 		}
 	});
@@ -86,5 +88,36 @@ $(document).ready(function(){
 		},500);
 		
 	});
+	
+	$(document).keydown(function(e){
+		
+		if( String.fromCharCode( e.which ) == "m" || String.fromCharCode( e.which ) == "M" ) {
+			$(m).click();
+			$("*").blur();
+			setTimeout(function(){
+				$("#menuview").find(".nav").first().focus();
+			},10);
+		}
+		
+		if( $("#nav").hasClass("exp") ) {
+			if( e.which == 38 ) { //up arrow
+				
+				e.preventDefault();
+				
+				$(".nav:focus").prev(".nav").focus();
+				
+			}
+			else if( e.which == 40 ) { //down arrow
+				
+				e.preventDefault();
+				
+				$(".nav:focus").next(".nav").focus();
+					
+			}
+		}
+		
+	});
+	
+	$("#menuview .nav").attr("tabindex","-1");
 	
 });

@@ -52,6 +52,11 @@ body{
 #menuview .nav {
   padding: 10px 30px;
 }
+#menuview .nav:focus {
+  outline: none;
+  background: whitesmoke;
+  color: #333;
+}
 
 #nav{
   border-top:solid #ff9900 2px;
