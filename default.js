@@ -1,7 +1,11 @@
 
 $("head").append("\
 <script src='/scripts/interpolater.js'></script>\
-<script src='/scripts/menu.js'></script>");
+<script src='/scripts/menu.js'></script>\
+");
+$("head").prepend("\
+<link rel='stylesheet' href='/stylesheets/default.css'>\
+");
 
 $(document).ready(function(){
 	

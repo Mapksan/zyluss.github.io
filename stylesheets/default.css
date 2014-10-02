@@ -29,15 +29,15 @@ body{
 #menu {
 	height: .9cm;
 	width: .9cm;
-	float: left;
-	margin-left: .5cm;
+	float: right;
+	margin-right: .5cm;
 	cursor: pointer;
 }
 
 #menuview {
   position: fixed;
   top: 1.5cm;
-  left: 0;
+  right: 0;
   background: #333;
   z-index: 2000;
   opacity: 0;
