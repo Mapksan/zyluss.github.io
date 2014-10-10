@@ -1,0 +1,31 @@
+body{
+    background-color:#803535;  
+    font-family: arial, sans-serif;
+    color:#d0a20d;
+    font-size:25px;
+}
+#header{
+    background-color:#1c6fad;
+    padding:0.2cm;
+}
+#header  :hover{
+	-webkit-animation: gradient 5s infinite;
+    animation: gradient 5s infinite;
+}
+@keyframes gradient {
+    
+}
+@-webkit-keyframes gradient {
+    
+}
+#info{
+    visibility:visible; 
+    font-size:14px;
+    color:grey;
+    background-color:black;
+    position:fixed;
+    margin:1cm;
+    margin-top:0.2cm;
+    padding:0.2cm;
+    opacity:0.0;
+} 
