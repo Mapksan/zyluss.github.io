@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
 body{
-  background-color:grey;
+  background-image:radial-gradient(#222, #323);
   font-family:Roboto;
   margin:0px; 
   font-weight:400;
@@ -14,9 +14,7 @@ body{
   color:whitesmoke;
   text-decoration:none;
   font-weight:400;
-/*  margin-right:25px;*/
-/*  width:700px;*/
-  display: list-item;
+  display:list-item;
   list-style-type: none;
 }
 #face{
