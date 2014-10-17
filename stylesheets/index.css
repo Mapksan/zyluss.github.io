@@ -2,3 +2,8 @@ body{
 background-image: url(/assets/backing.jpeg);
     background-size:100% 100%;
 }
+#canvas{
+    color:#6ab3e8;
+    background-color:hsl(261, 10%, 20%);
+    margin-top: 15cm;
+}
