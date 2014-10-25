@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <title>Technicrewb outbreak map</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+<h1>Outbreak map list</h1>
+        <script>
+          $(document).ready(function(){
+            $.ajax({
+                url: 'list.json',
+                type: 'GET'
+            }).done(function(data) {
+              var output = "";
+              for ( var i in data ) {
+                  output += "\
+                  <div class='listitem'>\
+                      <pre class='listitem'>data[i].name</pre>\
+                        <pre class='data[i].status'>data[i].content</pre>
+                  </div>";
+              }
+              $("pre").append(output);
+              projectEventHandlers();
+            }).fail(function(){
+              $("pre").append("Error loading JSON");
+            });
+          });
+        </script>
+
+<Style>
+body{
+    background-color:#c6903c;
+}
+    h1{
+        font-family: arial, sans-serif;
+    }
+</style>
