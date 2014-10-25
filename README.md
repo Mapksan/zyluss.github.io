@@ -1,10 +1,12 @@
-
+<head>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
 #Zyluss's website
 
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Sir Dylan Cooper (Zyluss)
+Copyright <il fa fa-envelope></il> 2014 Sir Dylan Cooper (Zyluss)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
