@@ -6,7 +6,7 @@
 
 The MIT License (MIT)
 
-Copyright <il fa fa-envelope></il> 2014 Sir Dylan Cooper (Zyluss)
+Copyright <il class="fa fa-envelope"></il> 2014 Sir Dylan Cooper (Zyluss)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
