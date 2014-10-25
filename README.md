@@ -1,7 +1,7 @@
 
 #Zyluss's website
 
-###The MIT License (MIT)
+###The MIT License
 
 >####<il>Copyright &copy; 2014 Sir Dylan J Cooper (Zyluss)</il>
 
