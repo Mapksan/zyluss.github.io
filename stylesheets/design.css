@@ -2,5 +2,11 @@ td{
  color:white;
     background-color: #333333;
     font-family: raleway, n6;
+    min-height:12px;   
+    padding:10px;
+}
+header{
+    font-family:Helvetica;
+    
     
 }
