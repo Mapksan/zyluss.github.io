@@ -3,8 +3,19 @@ background-image: url(/assets/backing.jpeg);
     background-size:100% 100%;
     background-position:50% 1.8cm;
 }
-#canvas{
-    color:#6ab3e8;
-    background-color:hsl(261, 10%, 20%);
-    margin-top: 15cm;
+
+td{
+ color:white;
+    background-color: #333333;
+    font-family: raleway, n6;
+    min-height:12px;   
+    padding:10px;
+}
+.header{
+    font-family:Helvetica;
+    font-size:32px;
+    color:#ffa500;
+}
+table{
+    margin-top:40%;
 }

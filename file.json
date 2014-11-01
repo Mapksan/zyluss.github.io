@@ -1,0 +1,5 @@
+/tellraw @a {"text":"","extra":[{"text":"Ok everyone has chosen their teams. Please click ","color":"dark_aqua"},{"text":"[Start]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TP set 1"}}]}
+
+
+
+/replaceitem entity @a[team=!lobby] slot.armour.1 minecraft:iron_helmate 1 0 {ench:[{id:0,lvl:1}]}
