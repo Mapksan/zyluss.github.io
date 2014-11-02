@@ -1,23 +1,96 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-var computer = function() {
-    var computerChoice = math.random();  
-};
-var user = function() {
-    var userChoice = prompt('Do you choose: rock, paper or scissors?','');
-};
 
-computer();
-user();
-
-var options = [
- "rock","paper","scissor"   
-];
-
-if (user.contains(options)) {
+function getWinner(a,b) {
+    //make sure values are valid
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+    if( a != "rock" && a != "paper" && a != "scissors") {
+        return false;
+    }
+    if( b != "rock" && b != "paper" && b != "scissors") {
+        return false;
+    }
     
+    var kill = {
+        "rock": "scissors",
+        "paper": "rock",
+        "scissors": "paper"
+    };
+    
+    for( var k in kill ) {
+        //check if a is the left value
+        if( a == k ) {
+            //check if b is the right value
+            if( b == kill[k] ) {
+                //if it is, a won
+                return 1;
+            }
+        }
+    }
+    for( var k in kill ) {
+        //check if b is the left value
+        if( b == k ) {
+            //check if a is the right value
+            if( a == kill[k] ) {
+                //if it is, b won
+                return 2;
+            }
+        }
+    }
+    
+    //it's a tie
+    return 3;
     
 }
-else {
+
+(function rps(){
+    var computerChoice, userChoice;
+    var computer = function() {
+        computerChoice = Math.floor(Math.random() * 3);
+        switch( computerChoice ) {
+            case 0:
+                computerChoice = "rock";
+                break;
+            case 1:
+                computerChoice = "paper";
+                break;
+            case 2:
+                computerChoice = "scissors";
+                break;
+            default:
+                computerChoice = "this should never happen";
+                break;
+        }
+    };
+    var user = function() {
+        userChoice = prompt('Do you choose: rock, paper or scissors?','').toLowerCase();
+    };
+    
+    computer();
     user();
-};
+    
+    var options = [
+     "rock","paper","scissor"   
+    ];
+    
+    if ($.inArray(userChoice, options) > -1) { // Array.prototype.contains isn't a thing in Javascript
+        //userChoice is valid
+        var winner = getWinner(computerChoice, userChoice);
+        switch( winner ) {
+            case 1:
+                alert("You lost! \n(Computer chose " + computerChoice + ")");
+                break;
+            case 2:
+                alert("You won! \n(Computer chose " + computerChoice + ")");
+                break;
+            case 3:
+                alert("Tie! \n(Computer chose " + computerChoice + ")");
+                break;
+        }
+        rps();
+    } else {
+        user();
+    };
+})();
 </script>
