@@ -64,7 +64,10 @@ function getWinner(a,b) {
         }
     };
     var user = function() {
-        userChoice = prompt('Do you choose: rock, paper or scissors?','').toLowerCase();
+        userChoice = prompt('Do you choose: rock, paper or scissors?','');
+        if( typeof(userChoice) == "string" ) {
+            userChoice = userChoice.toLowerCase();
+        }
     };
     
     computer();
