@@ -43,7 +43,8 @@ body{
   margin-left:1cm;
   background-color:white;
   padding:2.5%;
-  box-shadow: 0.1cm 0.1cm 0.1cm #7f7272;
+  box-shadow: 0.1cm 0.1cm 0.1cm rgba(127, 114, 114, .3);
+  -webkit-box-shadow: .1cm .1cm .1cm rgba(127, 114, 114, .3); /* Safari */
   font-family:Roboto;
 }
 .list{
