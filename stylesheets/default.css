@@ -1,10 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
 body{
-  background-image:linear-gradient(hsl(187, 27%, 52%), hsl(14, 35%, 25%));
-  font-family:Roboto;
-  margin:0px; 
-  font-weight:400;
-  overflow-x: hidden;
+    
+    font-family:Roboto;
+    margin:0px; 
+    font-weight:400;
+    overflow-x: hidden;
+    background-color: #050505;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzQwMCcgaGVpZ2h0PSc0MDAnPgoJPGRlZnMgaWQ9J2RlZnM0Jz4KCQk8ZmlsdGVyIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQicgaWQ9J2ZpbHRlcjMxMTUnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgbnVtT2N0YXZlcz0nMScgYmFzZUZyZXF1ZW5jeT0nMC45JyBpZD0nZmVUdXJidWxlbmNlMzExNycgLz4KCQkJPGZlQ29sb3JNYXRyaXggcmVzdWx0PSdyZXN1bHQ1JyB2YWx1ZXM9JzEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDYgLTQuNTMyICcgaWQ9J2ZlQ29sb3JNYXRyaXgzMTE5JyAvPgoJCQk8ZmVDb21wb3NpdGUgaW4yPSdyZXN1bHQ1JyBvcGVyYXRvcj0naW4nIGluPSdTb3VyY2VHcmFwaGljJyByZXN1bHQ9J3Jlc3VsdDYnIGlkPSdmZUNvbXBvc2l0ZTMxMjEnIC8+CgkJCTxmZU1vcnBob2xvZ3kgaW49J3Jlc3VsdDYnIG9wZXJhdG9yPSdkaWxhdGUnIHJhZGl1cz0nNScgcmVzdWx0PSdyZXN1bHQzJyBpZD0nZmVNb3JwaG9sb2d5MzEyMycgLz4KCQk8L2ZpbHRlcj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHg9JzAnIHk9JzAnIGlkPSdyZWN0Mjk4NScgZmlsbD0nIzA1MDUwNScvPiAgICAgCgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4PScwJyB5PScwJyBpZD0ncmVjdDI5ODUnIHN0eWxlPSdmaWxsOiMxYTYxNzg7ZmlsdGVyOnVybCgjZmlsdGVyMzExNSknIC8+Cjwvc3ZnPg==');
 }
 *{
   transition:0.269s;

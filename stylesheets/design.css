@@ -1,15 +1,25 @@
-td{
- color:white;
-    background-color: #333333;
-    font-family: raleway, n6;
-    min-height:12px;   
-    padding:10px;
+@import url(//fonts.googleapis.com/css?family=Raleway);
+
+body{
+    margin:0px;
+background-color: #050505;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzQwMCcgaGVpZ2h0PSc0MDAnPgoJPGRlZnMgaWQ9J2RlZnM0Jz4KCQk8ZmlsdGVyIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQicgaWQ9J2ZpbHRlcjMxMTUnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgbnVtT2N0YXZlcz0nMScgYmFzZUZyZXF1ZW5jeT0nMC45JyBpZD0nZmVUdXJidWxlbmNlMzExNycgLz4KCQkJPGZlQ29sb3JNYXRyaXggcmVzdWx0PSdyZXN1bHQ1JyB2YWx1ZXM9JzEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDYgLTQuNTMyICcgaWQ9J2ZlQ29sb3JNYXRyaXgzMTE5JyAvPgoJCQk8ZmVDb21wb3NpdGUgaW4yPSdyZXN1bHQ1JyBvcGVyYXRvcj0naW4nIGluPSdTb3VyY2VHcmFwaGljJyByZXN1bHQ9J3Jlc3VsdDYnIGlkPSdmZUNvbXBvc2l0ZTMxMjEnIC8+CgkJCTxmZU1vcnBob2xvZ3kgaW49J3Jlc3VsdDYnIG9wZXJhdG9yPSdkaWxhdGUnIHJhZGl1cz0nNScgcmVzdWx0PSdyZXN1bHQzJyBpZD0nZmVNb3JwaG9sb2d5MzEyMycgLz4KCQk8L2ZpbHRlcj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHg9JzAnIHk9JzAnIGlkPSdyZWN0Mjk4NScgZmlsbD0nIzA1MDUwNScvPiAgICAgCgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4PScwJyB5PScwJyBpZD0ncmVjdDI5ODUnIHN0eWxlPSdmaWxsOiMxYTYxNzg7ZmlsdGVyOnVybCgjZmlsdGVyMzExNSknIC8+Cjwvc3ZnPg==');
 }
-.header{
-    font-family:Helvetica;
-    font-size:32px;
-    color:#ffa500;
+
+.option{
+    font-family: raleway;
+    color:#19c2f2;
+    text-decoration:none;
+    font-size:30px;
+    margin:10px;
+    text-align: right;
 }
-table{
-    margin-top:10cm;
+nav{
+    background-color:#364037;
+    padding-bottom: 0.3cm;
+    padding-top:0.3cm;
+}
+#close{
+    color:white;
+    position: fixed;
+    font-size:50px;
 }
