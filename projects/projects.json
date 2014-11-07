@@ -14,9 +14,9 @@
         "link":"athiris.github.io",
         "name":"Athiris build team"
     },
-    "TechnicubeExtension": {
+  "TechnicubeExtension": {
         "language":"",
-        "link":"chrome.google.com/webstore/detail/technicube-events/ibanagipdnhoehfljiapcjahpkfenkcg",
+        "link":"https://chrome.google.com/webstore/detail/technicube-events/ibanagipdnhoehfljiapcjahpkfenkcg",
         "name":"Technicube Chrome Extension"
 
     }
