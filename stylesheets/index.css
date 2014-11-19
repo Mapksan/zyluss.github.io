@@ -1,7 +1,9 @@
 body{
 background-image: url(/assets/backing2.jpeg);
-    background-size:100% 100%;
-    background-position:50% 1.8cm;
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
 }
 
 td{
